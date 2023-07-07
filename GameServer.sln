@@ -7,9 +7,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "corePackages", "corePackage
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gameServer", "gameServer", "{55C348ED-20DB-4BCA-8E81-88AA89BDD182}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Persistence", "corePackages\Core.Persistence\Core.Persistence.csproj", "{BC0BF845-4750-4519-8DDD-0C3708F942B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Persistence", "corePackages\Core.Persistence\Core.Persistence.csproj", "{BC0BF845-4750-4519-8DDD-0C3708F942B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "gameServer\Server\Server.csproj", "{45538DC9-19F3-4A2F-A700-D118FE5E070C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "gameServer\Server\Server.csproj", "{45538DC9-19F3-4A2F-A700-D118FE5E070C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "gameServer\Application\Application.csproj", "{318150D6-14BE-4682-877B-1163A38054C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{45538DC9-19F3-4A2F-A700-D118FE5E070C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45538DC9-19F3-4A2F-A700-D118FE5E070C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45538DC9-19F3-4A2F-A700-D118FE5E070C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{318150D6-14BE-4682-877B-1163A38054C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{318150D6-14BE-4682-877B-1163A38054C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{318150D6-14BE-4682-877B-1163A38054C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{318150D6-14BE-4682-877B-1163A38054C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{BC0BF845-4750-4519-8DDD-0C3708F942B0} = {4C267471-8D11-407D-83F2-7476856ABD39}
 		{45538DC9-19F3-4A2F-A700-D118FE5E070C} = {55C348ED-20DB-4BCA-8E81-88AA89BDD182}
+		{318150D6-14BE-4682-877B-1163A38054C8} = {55C348ED-20DB-4BCA-8E81-88AA89BDD182}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5DB35A86-D593-4A34-A160-8C7E74874CCE}
