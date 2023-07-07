@@ -2,7 +2,7 @@
 
 namespace Application.Services.PlayerService;
 
-public interface IPalyerService 
+public interface IPlayerService 
 {
     Task<Player> Create(Player player);
     Task<Player> Update(Player player);

@@ -3,7 +3,7 @@ using Domain.EntityModels;
 
 namespace Application.Services.PlayerService;
 
-public class PlayerManager : IPalyerService
+public class PlayerManager : IPlayerService
 {
     private readonly IPlayerRepository _playerRepository;
 
