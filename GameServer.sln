@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gameServer", "gameServer", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Persistence", "corePackages\Core.Persistence\Core.Persistence.csproj", "{BC0BF845-4750-4519-8DDD-0C3708F942B0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "gameServer\Server\Server.csproj", "{45538DC9-19F3-4A2F-A700-D118FE5E070C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,12 +21,17 @@ Global
 		{BC0BF845-4750-4519-8DDD-0C3708F942B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC0BF845-4750-4519-8DDD-0C3708F942B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC0BF845-4750-4519-8DDD-0C3708F942B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45538DC9-19F3-4A2F-A700-D118FE5E070C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45538DC9-19F3-4A2F-A700-D118FE5E070C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45538DC9-19F3-4A2F-A700-D118FE5E070C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45538DC9-19F3-4A2F-A700-D118FE5E070C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BC0BF845-4750-4519-8DDD-0C3708F942B0} = {4C267471-8D11-407D-83F2-7476856ABD39}
+		{45538DC9-19F3-4A2F-A700-D118FE5E070C} = {55C348ED-20DB-4BCA-8E81-88AA89BDD182}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5DB35A86-D593-4A34-A160-8C7E74874CCE}
