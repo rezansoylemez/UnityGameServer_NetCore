@@ -8,11 +8,11 @@ public interface IEntity
     [BsonRepresentation(BsonType.String)]
     ObjectId Id { get; set; }
 
-    DateTime CreatedDate { get; }
-    DateTime DeletedDate { get; set; }
-    DateTime UpdatedDate { get; set; }
-
-    bool Status { get; set; }
+    DateTime? CreatedDate { get; }
+    DateTime? DeletedDate { get; set; }
+    DateTime? UpdatedDate { get; set; }
+            
+    bool? Status { get; set; }
     string? Code { get; set; }
 
 } 

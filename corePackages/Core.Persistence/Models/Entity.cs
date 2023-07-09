@@ -5,11 +5,11 @@ public class Entity : IEntity
 {
     public ObjectId Id { get; set; }
 
-    public DateTime CreatedDate { get;}
-    public DateTime DeletedDate { get; set; }
-    public DateTime UpdatedDate { get; set; }
+    public DateTime? CreatedDate { get; set; }
+    public DateTime? DeletedDate { get; set; }
+    public DateTime? UpdatedDate { get; set; }
 
-    public bool Status { get; set; }
+    public bool? Status { get; set; }
     public string? Code { get; set; }
 
     public Entity()
