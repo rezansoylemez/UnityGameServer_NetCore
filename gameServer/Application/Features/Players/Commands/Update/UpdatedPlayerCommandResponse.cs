@@ -1,12 +1,13 @@
 ﻿using MongoDB.Bson;
 
-namespace Application.Features.Players.Commands.Create;
+namespace Application.Features.Players.Commands.Update;
 
-public class CreatedPlayerCommandResponse
+public class UpdatedPlayerCommandResponse
 {
     public string? FirstName { get; set; }
     public string? LastName { get; set; }
     public int? Level { get; set; }
+    public ObjectId Id { get; set; }
 
     public DateTime? CreatedDate { get; }
     public DateTime? DeletedDate { get; set; }

@@ -1,5 +1,5 @@
 ﻿using Application.Repositories;
-using Domain.EntityModels;
+using Domain.EntityModels; 
 
 namespace Application.Services.PlayerService;
 
@@ -29,7 +29,6 @@ public class PlayerManager : IPlayerService
         var updatedPlayer = await _playerRepository.ReplaceOneAsync(player);
         return updatedPlayer;
     }
-
 
 
     public async Task<Player> GetById(string id)

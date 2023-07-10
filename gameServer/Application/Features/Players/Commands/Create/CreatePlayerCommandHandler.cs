@@ -6,7 +6,7 @@ namespace Application.Features.Players.Commands.Create;
 public class CreatePlayerCommandHandler : IRequestHandler<CreatePlayerCommandRequest, CreatedPlayerCommandResponse>
 {
     private readonly IPlayerService _playerService;
-    private readonly IMapper _mapper;
+    private IMapper _mapper;
 
     public CreatePlayerCommandHandler(IPlayerService playerService, IMapper mapper)
     {
@@ -18,12 +18,28 @@ public class CreatePlayerCommandHandler : IRequestHandler<CreatePlayerCommandReq
     {
         var newPlayer = _mapper.Map<Player>(request);
 
+
         newPlayer.Status = true;
-        newPlayer.CreatedDate = DateTime.Now; 
+        newPlayer.CreatedDate = DateTime.Now;
         var createdPalyer = await _playerService.Create(newPlayer);
 
         var response = _mapper.Map<CreatedPlayerCommandResponse>(createdPalyer);
 
+        response.FirstName = createdPalyer.FirstName;
         return response;
+
+        ////var newPlayer = _mapper.Map<Player>(request);
+
+        //var newPlayer = new Player();
+
+        //newPlayer.Status = true;
+        //newPlayer.CreatedDate = DateTime.Now; 
+        //var createdPalyer = await _playerService.Create(newPlayer);
+
+        //// var response = _mapper.Map<CreatedPlayerCommandResponse>(createdPalyer);
+
+        //var response = new CreatedPlayerCommandResponse();
+        //response.FirstName = createdPalyer.FirstName;
+        //return response;
     }
 }

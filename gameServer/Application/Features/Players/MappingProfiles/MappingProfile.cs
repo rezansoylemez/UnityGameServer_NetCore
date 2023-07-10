@@ -7,8 +7,8 @@ public class MappingProfile:Profile
 {
     public MappingProfile()
     {
-        CreateMap<Player, CreatedPlayerCommandResponse>().ReverseMap();
         CreateMap<Player, CreatePlayerCommandRequest>().ReverseMap();
-         
+        CreateMap<Player, CreatedPlayerCommandResponse>().ReverseMap();
+
     }
 }

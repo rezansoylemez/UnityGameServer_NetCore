@@ -1,22 +1,16 @@
 ﻿using Application.Services.PlayerService;
-using Microsoft.Extensions.DependencyInjection; 
+using MediatR;
+using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
 public static class ApplicationServiceRegistration
 {
     public static IServiceCollection AddApplicationServices(this IServiceCollection services)
     {
-        //services.AddAutoMapper(Assembly.GetExecutingAssembly());
-        //services.AddMediatR(Assembly.GetExecutingAssembly());
-        //services.AddMemoryCache();
+        services.AddAutoMapper(Assembly.GetExecutingAssembly());
+        services.AddMediatR(Assembly.GetExecutingAssembly());
 
-        //services.AddSubClassesOfType(Assembly.GetExecutingAssembly(), typeof(BaseBusinessRules));
 
-        //services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
-     
-        
-       // services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AuthorizationBehavior<,>));
-        
         services.AddScoped<IPlayerService, PlayerManager>();
 
 
