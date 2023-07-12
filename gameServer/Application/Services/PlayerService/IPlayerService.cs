@@ -1,4 +1,4 @@
-﻿using Domain.EntityModels; 
+﻿using Core.Domain.Models;
 namespace Application.Services.PlayerService;
 
 public interface IPlayerService 

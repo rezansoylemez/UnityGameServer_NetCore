@@ -1,6 +1,6 @@
 ﻿using Application.Services.PlayerService;
 using AutoMapper;
-using Domain.EntityModels;
+using Core.Domain.Models; 
 using MediatR; 
 namespace Application.Features.Players.Commands.Create;
 public class CreatePlayerCommandHandler : IRequestHandler<CreatePlayerCommandRequest, CreatedPlayerCommandResponse>
@@ -21,6 +21,12 @@ public class CreatePlayerCommandHandler : IRequestHandler<CreatePlayerCommandReq
 
         newPlayer.Status = true;
         newPlayer.CreatedDate = DateTime.Now;
+        newPlayer.Email = request.Email;
+        newPlayer.Code = request.Code;
+        newPlayer.XPosition = request.XPosition;
+        newPlayer.YPosition = request.YPosition;
+        newPlayer.Rank = request.Rank;  
+
         var createdPalyer = await _playerService.Create(newPlayer);
 
         var response = _mapper.Map<CreatedPlayerCommandResponse>(createdPalyer);

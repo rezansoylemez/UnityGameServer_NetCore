@@ -1,6 +1,6 @@
-﻿using Core.Persistence.Repositories.ReadRepositories;
+﻿using Core.Domain.Models;
+using Core.Persistence.Repositories.ReadRepositories;
 using Core.Persistence.Repositories.WriteRepositories;
-using Domain.EntityModels;
 
 namespace Application.Repositories;
 

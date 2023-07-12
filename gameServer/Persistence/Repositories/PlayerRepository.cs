@@ -1,7 +1,7 @@
 ﻿using Application.Repositories;
+using Core.Domain.Models;
 using Core.Persistence.Repositories;
-using Core.Persistence.Settings;
-using Domain.EntityModels;
+using Core.Persistence.Settings; 
 using Microsoft.Extensions.Options;
 
 namespace Persistence.Repositories;

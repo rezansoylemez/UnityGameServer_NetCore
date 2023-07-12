@@ -1,5 +1,5 @@
 ﻿using Application.Repositories;
-using Domain.EntityModels; 
+using Core.Domain.Models;  
 
 namespace Application.Services.PlayerService;
 
