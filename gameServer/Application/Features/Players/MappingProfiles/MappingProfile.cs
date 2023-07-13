@@ -1,6 +1,6 @@
 ﻿using Application.Features.Players.Commands.Create;
 using AutoMapper;
-using Domain.EntityModels;
+using Core.Domain.Models;
 
 namespace Application.Features.Players.MappingProfiles;
 public class MappingProfile:Profile

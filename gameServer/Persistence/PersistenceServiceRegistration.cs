@@ -1,6 +1,4 @@
 ﻿using Application.Repositories;
-using Core.Persistence.DbContext;
-using Core.Persistence.Settings;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Persistence.Repositories;
